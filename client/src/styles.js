@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-
+import { teal,blueGrey } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 0,
@@ -19,5 +19,14 @@ export default makeStyles((theme) => ({
   mainContainer:{
     flexDirection:"column-reverse"
   }
-}
+},
+palette: {
+  primary: {
+    main: teal[400],
+  },
+  secondary: {
+    main: blueGrey[700],
+  },
+},
 }));
+

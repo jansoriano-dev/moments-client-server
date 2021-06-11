@@ -37,7 +37,7 @@ const user = JSON.parse(localStorage.getItem('profile'))
   if(!user?.result?.name){
     return(
       <Paper className={classes.paper}>
-<Typography variant="h6" align="center">Please Sign In to create your own moments and see other's moments.</Typography>
+<Typography variant="h6" align="center">Please Sign In to create your memes and others memes.</Typography>
       </Paper>
     )
   }
