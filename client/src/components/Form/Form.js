@@ -43,7 +43,7 @@ const user = JSON.parse(localStorage.getItem('profile'))
   }
 
   return (
-    <Paper className={classes.paper}>
+    <Paper className={classes.paper} elevation ={6}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
         <Typography variant="h6">{currentId ? `Editing "${post.title}"` : 'Share your moments'}</Typography>
         {/* <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} /> */}
