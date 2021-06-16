@@ -20,9 +20,9 @@ const Home = () => {
     const query = useQuery();
     const history = useHistory();
     const page = query.get('page') || 1;
-    const searQuery = query.get('searchQuery')
+    const searchQuery = query.get('searchQuery')
     const classes=useStyles();
-    const [search,setSearch] =useState("")
+    const [search,setSearch] =useState('')
     const [tags,setTags] =useState([])
   
     useEffect(() => {
@@ -30,7 +30,7 @@ const Home = () => {
     }, [currentId, dispatch]);
 
     const searchPost =()=>{
-      if(search.trim()){
+      if(search.trim() || tags){
         dispatch(getPostsBySearch({search,tags:tags.join(',')}))
       }else{
         history.push('/')
