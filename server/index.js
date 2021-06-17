@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use('/user', userRouter);
 app.get('/', (req,res)=>{
-  res.send('Hello to moments API')
+  res.send('Hello to moments backend')
 })
 const PORT = process.env.PORT|| 5000;
 
